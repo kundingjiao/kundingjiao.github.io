@@ -1,15 +1,15 @@
 theme: just-the-docs
 title: kundingjiao's home
 
-# 以下配置 https://just-the-docs.com/docs/configuration
-search:
-  heading_level: 2
-  button: true
-  # 按下 `ctrl + focus_shortcut_key`聚焦到搜索框
-  focus_shortcut_key: "k"
+# # 以下配置 https://just-the-docs.com/docs/configuration
+# search:
+#   heading_level: 2
+#   button: true
+#   # 按下 `ctrl + focus_shortcut_key`聚焦到搜索框
+#   focus_shortcut_key: "k"
 
-# 美人鱼图表（Mermaid Diagrams）
-mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.3"
+# # 美人鱼图表（Mermaid Diagrams）
+# mermaid:
+#   # Version of mermaid library
+#   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+#   version: "9.1.3"
