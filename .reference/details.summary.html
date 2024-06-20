@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+        color="#111">
+    <title>CodePen - Tree-nav based on details/summary</title>
+    <link rel="canonical" href="https://codepen.io/dsheiko/pen/MvEpXm">
+    <style>
+        /*
+   Only custom marker for summary/details
+   For cross browser compatible styling hide Firefox's marker by setting summary { display: block }
+   and Chrome and Safari's marker by setting ::-webkit-details-marker {display: none;}
+  */
+        summary {
+            display: block;
+            cursor: pointer;
+            outline: 0;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        body {
+            background-color: #191c1e;
+            color: white;
+            font-size: 1.6rem;
+            font-family: arial;
+            margin: 0;
+            padding: 3rem;
+        }
+
+        .tree-nav__item {
+            display: block;
+            white-space: nowrap;
+            color: #ccc;
+            position: relative;
+        }
+
+        .tree-nav__item.is-expandable::before {
+            border-left: 1px solid #333;
+            content: "";
+            height: 100%;
+            left: 0.8rem;
+            position: absolute;
+            top: 2.4rem;
+            height: calc(100% - 2.4rem);
+        }
+
+        .tree-nav__item .tree-nav__item {
+            margin-left: 2.4rem;
+        }
+
+        .tree-nav__item.is-expandable[open]>.tree-nav__item-title::before {
+            font-family: "ionicons";
+            transform: rotate(90deg);
+        }
+
+        .tree-nav__item.is-expandable>.tree-nav__item-title {
+            padding-left: 2.4rem;
+        }
+
+        .tree-nav__item.is-expandable>.tree-nav__item-title::before {
+            position: absolute;
+            will-change: transform;
+            transition: transform 300ms ease;
+            font-family: "ionicons";
+            color: #fff;
+            font-size: 1.1rem;
+            content: "\f125";
+            left: 0;
+            display: inline-block;
+            width: 1.6rem;
+            text-align: center;
+        }
+
+        .tree-nav__item-title {
+            cursor: pointer;
+            display: block;
+            outline: 0;
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+        }
+
+        .tree-nav__item-title .icon {
+            display: inline;
+            padding-left: 1.6rem;
+            margin-right: 0.8rem;
+            color: #666;
+            font-size: 1.4rem;
+            position: relative;
+        }
+
+        .tree-nav__item-title .icon::before {
+            top: 0;
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            width: 1.6rem;
+            text-align: center;
+        }
+
+        .tree-nav__item-title::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+</head>
+
+<body translate="no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet"
+        type="text/css">
+    <nav class="tree-nav"> <a class="tree-nav__item-title">
+            <i class="icon ion-scissors"></i>
+            THE INHERITANCE
+        </a>
+        <a class="tree-nav__item-title">
+            <i class="icon ion-android-star"></i>
+            The Willful Princess and the Piebald Prince
+        </a>
+        <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">The Realm of the Elderlings</summary>
+            <details class="tree-nav__item is-expandable">
+                <summary class="tree-nav__item-title">The Six Duchies</summary>
+                <details class="tree-nav__item is-expandable">
+                    <summary class="tree-nav__item-title">The Farseer Trilogy</summary>
+                    <div class="tree-nav__item">
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> Assassin’s Apprentice</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> Royal Assasin</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-android-bookmark"></i> Assassin's Quest</a>
+                    </div>
+                </details>
+                <details class="tree-nav__item is-expandable">
+                    <summary class="tree-nav__item-title">The Tawny Man Trilogy</summary>
+                    <div class="tree-nav__item">
+                        <a class="tree-nav__item-title"><i class="icon ion-cube"></i> FOOL'S ERRAND</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> GOLDEN FOOL</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S FATE</a>
+                    </div>
+                </details>
+                <details class="tree-nav__item is-expandable">
+                    <summary class="tree-nav__item-title">The Fitz and the Fool Trilogy</summary>
+                    <div class="tree-nav__item">
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-bookmarks"></i> FOOL'S ASSASSIN</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-ios-book"></i> FOOL'S QUEST</a>
+                        <a class="tree-nav__item-title"><i class="icon ion-android-bookmark"></i> Assassin's Fate</a>
+                    </div>
+                </details>
+            </details>
+        </details>
+        <details class="tree-nav__item is-expandable">
+            <summary class="tree-nav__item-title">The Soldier Son trilogy</summary>
+            <div class="tree-nav__item">
+                <a class="tree-nav__item-title"><i class="icon ion-edit"></i> SHAMAN'S CROSSING</a>
+                <a class="tree-nav__item-title"><i class="icon ion-paperclip"></i> FOREST MAGE</a>
+            </div>
+        </details>
+    </nav>
+</body>
+
+</html>
