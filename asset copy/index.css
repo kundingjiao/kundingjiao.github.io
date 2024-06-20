@@ -1,0 +1,57 @@
+style {
+    display: block;
+    white-space: pre;
+}
+
+nav {
+    width: max-content;
+
+    details {
+        padding-left: 30px;
+
+        >summary {
+            list-style-type: none;
+            margin-left: -30px;
+
+            &::before {
+                content: '▶';
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        /* 空文件夹 */
+        &[data-empty] {
+            pointer-events: none;
+            color: #aaa;
+        }
+
+        &:not([data-empty]) {
+            position: relative;
+
+            >summary::before {
+                transition: transform 300ms ease;
+            }
+
+            &[open] {
+                &::before {
+                    content: "";
+                    border-left: 1px solid #aaa;
+                    left: 7px;
+                    position: absolute;
+                    top: 1.2em;
+                    height: calc(100% - 1.2em);
+                }
+
+                >summary::before {
+                    transform: rotate(45deg);
+                }
+
+                a {
+                    display: block;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}

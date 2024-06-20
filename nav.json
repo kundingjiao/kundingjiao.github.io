@@ -1,0 +1,120 @@
+[
+    {
+        "类型": "文件夹",
+        "名称": "基础",
+        "路径": "基础",
+        "子项": [
+            {
+                "类型": "文件夹",
+                "名称": "01.HTML",
+                "路径": "基础\\01.HTML",
+                "子项": [
+                    {
+                        "类型": "文件夹",
+                        "名称": "01 Introduction",
+                        "路径": "基础\\01.HTML\\01 Introduction",
+                        "子项": []
+                    },
+                    {
+                        "类型": "文件夹",
+                        "名称": "04 The elements of HTML",
+                        "路径": "基础\\01.HTML\\04 The elements of HTML",
+                        "子项": [
+                            {
+                                "类型": "文件夹",
+                                "名称": "4.01 The document element",
+                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.01 The document element",
+                                "子项": [
+                                    {
+                                        "类型": "html",
+                                        "名称": "4.1.1 The html element",
+                                        "路径": "基础\\01.HTML\\04 The elements of HTML\\4.01 The document element\\4.1.1 The html element.html"
+                                    }
+                                ]
+                            },
+                            {
+                                "类型": "文件夹",
+                                "名称": "4.02 Document metadata",
+                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.02 Document metadata",
+                                "子项": []
+                            },
+                            {
+                                "类型": "文件夹",
+                                "名称": "4.11 Interactive elements",
+                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.11 Interactive elements",
+                                "子项": [
+                                    {
+                                        "类型": "html",
+                                        "名称": "4.11.1 The details element",
+                                        "路径": "基础\\01.HTML\\04 The elements of HTML\\4.11 Interactive elements\\4.11.1 The details element.html"
+                                    },
+                                    {
+                                        "类型": "html",
+                                        "名称": "4.11.2 The summary element",
+                                        "路径": "基础\\01.HTML\\04 The elements of HTML\\4.11 Interactive elements\\4.11.2 The summary element.html"
+                                    }
+                                ]
+                            },
+                            {
+                                "类型": "文件夹",
+                                "名称": "4.12 Scripting",
+                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.12 Scripting",
+                                "子项": [
+                                    {
+                                        "类型": "文件夹",
+                                        "名称": "4.12.1 The script element",
+                                        "路径": "基础\\01.HTML\\04 The elements of HTML\\4.12 Scripting\\4.12.1 The script element",
+                                        "子项": []
+                                    },
+                                    {
+                                        "类型": "文件夹",
+                                        "名称": "4.12.3 The template element",
+                                        "路径": "基础\\01.HTML\\04 The elements of HTML\\4.12 Scripting\\4.12.3 The template element",
+                                        "子项": [
+                                            {
+                                                "类型": "文件夹",
+                                                "名称": "4.12.3.1 Interaction of template elements with XSLT and XPath",
+                                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.12 Scripting\\4.12.3 The template element\\4.12.3.1 Interaction of template elements with XSLT and XPath",
+                                                "子项": []
+                                            },
+                                            {
+                                                "类型": "html",
+                                                "名称": "index",
+                                                "路径": "基础\\01.HTML\\04 The elements of HTML\\4.12 Scripting\\4.12.3 The template element\\index.html"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "类型": "文件夹",
+                "名称": "02.CSS",
+                "路径": "基础\\02.CSS",
+                "子项": [
+                    {
+                        "类型": "文件夹",
+                        "名称": "Pseudo-Elements",
+                        "路径": "基础\\02.CSS\\Pseudo-Elements",
+                        "子项": [
+                            {
+                                "类型": "html",
+                                "名称": "mark",
+                                "路径": "基础\\02.CSS\\Pseudo-Elements\\mark.html"
+                            }
+                        ]
+                    },
+                    {
+                        "类型": "文件夹",
+                        "名称": "selectors",
+                        "路径": "基础\\02.CSS\\selectors",
+                        "子项": []
+                    }
+                ]
+            }
+        ]
+    }
+]
